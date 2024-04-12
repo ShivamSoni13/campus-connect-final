@@ -23,11 +23,10 @@ function start() {
           strangerVideo.srcObject = e.streams[0];
           strangerVideo.play();
         }
-
       }
     })
     .catch(ex => {
-      console.log(ex);
+      console.error('Error accessing media devices:', ex);
     });
 }
 
